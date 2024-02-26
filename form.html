@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="Biodata" action="https://www.detik.com/" method="post" 
+submit="validasiData" onsubmit="return validasiData()">
+    
+    <input type="text" name="nama_siswa">
+
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+    function validasiData(){
+        let x = document.forms["Biodata"]["nama_siswa"].value;
+    alert("OK" + " " + x)
+    return (x != "")
+    }
+</script>
+
+</body>
+</html>
